@@ -1,0 +1,6 @@
+<%= simple_form_for @product do |product| %>
+  <%= product.input :name %>
+  <%= product.input :description %>
+  <%= product.input :price %>
+  <%= product.submit class: "btn btn-success opacity-75" %>
+<% end %>
