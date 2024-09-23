@@ -70,4 +70,4 @@ rails s
 ```
 
 # LICENSE
-
+See [LICENSE.md](LICENSE.md)
