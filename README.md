@@ -1,5 +1,7 @@
 # Product Manager
 
+[![CI](https://github.com/leandrocunha526/project-manager-rails/actions/workflows/ci.yml/badge.svg)](https://github.com/leandrocunha526/project-manager-rails/actions/workflows/ci.yml)
+
 ## Overview
 
 Product Manager is a web application designed to help users manage their products efficiently. Users can create, view, edit, and delete products with ease.
@@ -41,7 +43,7 @@ Make sure you have the following installed:
 
 ```bash
 git clone https://github.com/leandrocunha526/product-manager-rails.git
-cd product_manager-rails
+cd product-manager-rails
 ```
 
 2. Install the required gems:
