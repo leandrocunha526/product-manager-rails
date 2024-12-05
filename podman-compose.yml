@@ -1,0 +1,35 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        RUBY_VERSION: 3.2.5
+    environment:
+      DATABASE_URL: postgres://postgres:admin12345@db:5432/products_manager_rails_production
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./log:/rails/log
+      - ./storage:/rails/storage
+    depends_on:
+      - db
+    command: >
+      sh -c "yarnpkg install &&
+      bin/rails db:migrate &&
+      bundle exec puma -C config/puma.rb"
+
+  db:
+    image: postgres:16
+    container_name: db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: admin12345
+      POSTGRES_DB: products_manager_rails_production
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+volumes:
+  postgres_data:
