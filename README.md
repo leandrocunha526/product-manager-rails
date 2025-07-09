@@ -25,7 +25,7 @@ Product Manager is a web application designed to help users manage their product
 - **Capybara**: Tool for feature testing in web applications.
 - ***Bootstrap***:  Bootstrap is a popular front-end framework for developing responsive and mobile-first web applications. It provides a collection of CSS and JavaScript components that make it easy to design and customize web pages.
 - ***Simple form***: Simple Form aims to be as flexible as possible while helping you with powerful components to create your forms.
-- ***SACSS***: SCSS (Sassy CSS) is a preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets (CSS).
+- ***SCSS***: SCSS (Sassy CSS) is a preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets (CSS).
 
 ## Getting Started
 
